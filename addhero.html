@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 17 - Pseudos</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+  </head>
+
+  <body class="bodyflex">
+
+    <div class="desconto">
+      <p>Desconto 20%</p>
+    </div>
+
+    <header>
+      <h1>Super Herois</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>Contato</li>
+        <li>Registre-se</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+
+    <main class="form-content">
+      <div>
+        <h2>Adicionar seu Super-Herói</h2>
+        <h3>Adicione seu personagem favorito completando as informações</h3>
+      </div>
+
+      
+      <form action="adicionado.html">
+        <div class="colunas">
+          <div class="coluna1">
+              <div class="nome-form">
+                <label for="nome">*Nome:</label>
+                <input type="text" id="nome">
+              </div>
+              <br>
+              <div class="Nascimento">
+                <p>Data de nascimento</p>
+                <input type="date">
+              </div>
+
+              <div class="descricao">
+                <textarea placeholder="Descrição">Descrição
+                </textarea>
+              </div>
+
+          </div>
+
+          <div class="coluna2">
+
+            <div class="especie">
+              <label for="especie">*Espécie</label><br>
+              <select id="especie" name="especie">
+                <option value="voador">Voador</option>
+                <option value="forca">Força</option>
+                <option value="mental">Mental</option>
+            </select>
+            </div>
+
+            <div class="foto">
+              <label for="foto" id="foto">Adicionar foto:</label>
+              <br><input class="btnfoto" type="file" id="foto" name="foto">
+            </div>
+
+
+            <div class="poderes">
+                    <p>Poderes</p>
+                    <ul>
+                        <li>
+                          <input type="checkbox" id="voar" value="voar" name="Voar">
+                          <label for="voar">Voar</label>
+                        </li>
+
+                        <li>
+                          <input type="checkbox" id="inteligence" value="inteligence" name="inteligence">
+                          <label for="inteligence">Super Inteligência</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="laser" value="laser" name="laser">
+                          <label for="laser">Visão de Raio Laser</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="rico" value="rico" name="rico">
+                          <label for="rico">Super Rico</label>
+                        </li>
+                    </ul>
+            </div>
+            
+
+            <div class="linha">________</div>
+
+            <div class="tipo-pers">
+              <p>Tipo de Personagem</p>
+                <ul>
+                  <li>
+                    <input type="radio" name="tipo" id="heroi">
+                    <label for="heroi">Herói ou Heroína</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="tipo" id="vilao">
+                    <label for="vilao">Vilão ou Vilã</label>
+                  </li>
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="botaoadd">
+            <button class="add">Adicionar</button>
+          </div>
+        
+      </form>
+      
+    </main>
+
+    <footer class="footer-content">
+      <div></div>
+      <h3>Todos os direitos reservados a FRONT END 1</h3>
+      <img class="git" src="./img/logo-git.png" alt="" />
+    </footer>
+  </body>
+</html>
